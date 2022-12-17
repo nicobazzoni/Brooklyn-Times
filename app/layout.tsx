@@ -10,9 +10,10 @@ export default function RootLayout({
     <html>
       <head />
       
-      <body>
+      <body className='bg-gray-200 dar:bg-zinc-900 transition-all duration-700'>
       <Header />
-      {children}
+      
+      <div className='max-w-6xl mx-auto'>{children}</div>
       </body>
     
     </html>

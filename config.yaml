@@ -1,0 +1,4 @@
+configurationset:
+  - configuration:
+      name: curl_import_config
+      authentication_5de7f30211: dongdu::stepzen.net+1000::8a90b94d4df8b6007ec6aa2cfc1ec9352e90fd6136b36b27e2fb11d082d03a06
