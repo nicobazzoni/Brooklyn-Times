@@ -45,7 +45,7 @@ const fetchNews = async (
 const res = await fetch("https://dongdu.stepzen.net/api/wistful-macaw/__graphql", {
     method: "POST",
     cache: isDynamic ? "no-cache" : "default",
-    next: isDynamic ? { revalidate: 0 } : { revalidate: 60 },
+    next: isDynamic ? { revalidate: 0 } : { revalidate: 20 },
     headers: {
         "Content-Type": "application/json",
         Authorization: `Apikey ${process.env.STEPZEN_API_KEY}`,

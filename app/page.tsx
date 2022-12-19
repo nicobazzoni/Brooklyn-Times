@@ -4,13 +4,14 @@ import fetchNews from "../lib/fetchNews"
 import NewsList from "./NewsList"
 
 
-
 async function Homepage() {
-    const news: NewsResponse = await fetchNews(categories.join(","))
+const news: NewsResponse = await fetchNews(categories.join(","))
+  await new Promise((resolve) => setTimeout(resolve, 3000))
 
-    console.log(news)
+   
   return <div> 
     <NewsList news={news} />
+
   </div>
    
   

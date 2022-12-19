@@ -5,7 +5,7 @@ type Props = {
     searchParams?: Article;
 }
 
-function ArticlePage({searchParams}: Props) {
+function ArticlePage({ searchParams }: Props) {
     if ( 
         (searchParams && Object.entries(searchParams).length === 0) ||
         !searchParams
@@ -35,10 +35,13 @@ function ArticlePage({searchParams}: Props) {
                 <div>
                     <h2 className='font-bold'>By: {article.author}</h2>
                     <h2 className='font-bold pl-4'>Source: {article.source}</h2>
-                    <p className='pl-4'>{article.published_at}</p>
+                    <p 
+                    className='pl-4'>
+                        {article.published_at}
+                        </p>
                 </div>
 
-                <p className='pt-4'>{article.description}</p>
+                <p className=''>{article.description}</p>
             </div>
         </section>
 
