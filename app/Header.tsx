@@ -14,7 +14,7 @@ function Header() {
             </Link>
 
             <div className='flex space-x-9  items-center mr-2  justify-end '>
-                <DarkModeButton />
+                <DarkModeButton/>
                
                 <button className='hidden md:inline bg-slate-900 text-white px-2 
                 lg:px-8 py-2 lg:py-4 rounded-full dark:bg-slate-800'>
